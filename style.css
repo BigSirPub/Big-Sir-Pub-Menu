@@ -1,0 +1,101 @@
+/* Estilo geral do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal do cardápio */
+.menu-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Cabeçalho do cardápio */
+.menu-header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.menu-header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.menu-header p {
+    font-size: 1.2em;
+    color: #7f8c8d;
+}
+
+/* Estilo das categorias do cardápio */
+.menu-category {
+    margin-top: 30px;
+}
+
+.menu-category h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 10px;
+    color: #2980b9;
+}
+
+/* Estilo dos itens do cardápio */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item-name {
+    font-size: 1.2em;
+    color: #34495e;
+}
+
+.menu-item-price {
+    font-size: 1.2em;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Estilo para descrições dos itens */
+.menu-item-description {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+/* Estilo especial para cervejas */
+.menu-item-beer {
+    color: #f39c12;
+}
+
+/* Estilo das porções */
+.menu-item-portion {
+    color: #8e44ad;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-item-price {
+        margin-top: 10px;
+    }
+}
