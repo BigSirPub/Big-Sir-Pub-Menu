@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Big Sir</title>
+    <style>
+        /* Estilos base para o cardápio */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff5722;
+        }
+        h2 {
+            color: #ff5722;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .item img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        .item h3 {
+            margin: 0 0 5px;
+        }
+        .item p {
+            margin: 0 0 5px;
+        }
+        .preco {
+            font-weight: bold;
+            color: #ff5722;
+        }
+        
+        /* Estilos para telas maiores (desktops) */
+        @media(min-width: 768px) {
+            .item {
+                flex-direction: row;
+                text-align: left;
+            }
+            .item img {
+                width: 150px;
+                margin-right: 20px;
+            }
+            .item div {
+                max-width: 700px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cardápio Big Sir</h1>
+
+        <!-- Cervejas -->
+        <div class="categoria">
+            <h2>Cervejas</h2>
+            
+            <div class="item">
+                <img src="https://www.seudominio.com/imagens/pilsen.jpg" alt="Cerveja Pilsen">
+                <div>
+                    <h3>Cerveja Pilsen - 350ml</h3>
+                    <p>Leve, refrescante e equilibrada. Ideal para todos os momentos.</p>
+                    <p class="preco">R$ 8,50</p>
+                </div>
+            </div>
+            
+            <div class="item">
+                <img src="https://www.seudominio.com/imagens/ipa.jpg" alt="Cerveja IPA">
+                <div>
+                    <h3>Cerveja IPA - 350ml</h3>
+                    <p>Intensa, com amargor acentuado e notas cítricas e frutadas.</p>
+                    <p class="preco">R$ 10,00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="categoria">
+            <h2>Drinks</h2>
+            
+            <div class="item">
+                <img src="https://www.seudominio.com/imagens/caipirinha.jpg" alt="Caipirinha">
+                <div>
+                    <h3>Caipirinha</h3>
+                    <p>A clássica brasileira com cachaça, limão e açúcar.</p>
+                    <p class="preco">R$ 15,00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Porções -->
+        <div class="categoria">
+            <h2>Porções</h2>
+            
+            <div class="item">
+                <img src="https://www.seudominio.com/imagens/batata_frita.jpg" alt="Batata Frita">
+                <div>
+                    <h3>Batata Frita</h3>
+                    <p>Batata frita crocante, acompanhada de molho de ketchup e maionese.</p>
+                    <p class="preco">R$ 14,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
