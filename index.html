@@ -1,7 +1,5 @@
-<html lang="en">
+<html>
  <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
    Beer Menu
   </title>
@@ -16,11 +14,11 @@
             color: #fff;
         }
         .beer-item {
-            border-bottom: 1px solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             padding: 10px 0;
-        }
-        .beer-item:last-child {
-            border-bottom: none;
+            border-bottom: 1px solid #333;
         }
         .beer-item img {
             width: 50px;
@@ -28,221 +26,242 @@
         }
         .beer-item .details {
             flex: 1;
+            margin-left: 10px;
+        }
+        .beer-item .details h2 {
+            font-size: 1.5rem;
+        }
+        .beer-item .details p {
+            font-size: 1rem;
         }
         .beer-item .price {
             text-align: right;
         }
-        .beer-item .price div {
-            margin-bottom: 5px;
+        .beer-item .price p {
+            font-size: 1.25rem;
         }
   </style>
  </head>
- <body class="p-4">
-  <div class="text-center text-2xl mb-4">
-   CACHORRO OVELHEIRO
-  </div>
-  <div class="text-center text-xl mb-8">
-   AMERICAN IPA
-  </div>
-  <div class="space-y-4">
-   <div class="beer-item flex flex-col items-start">
-    <div class="flex items-center w-full">
-     <img alt="Beer 1" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-qthnSpUdahF4ySsFfaVl8uPL.png?st=2024-10-01T14%3A28%3A29Z&amp;se=2024-10-01T16%3A28%3A29Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T02%3A24%3A02Z&amp;ske=2024-10-02T02%3A24%3A02Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=oFWnle45IivoCaYmyxquV6hQ9ewzLvIM15DrjwmoyYc%3D" width="50"/>
-     <div class="details ml-4">
-      <div class="text-lg">
-       PILSEN
-      </div>
-      <div class="text-xs">
-       BALDORIA CERVEJARIA
-      </div>
-      <div class="text-xs">
-       4,7% | 10 IBU
-      </div>
-     </div>
+ <body>
+  <div class="container mx-auto p-4">
+   <div class="text-center mb-4 flex items-center justify-center">
+    <img src="https://placehold.co/50x50" alt="Left Logo" class="mr-4"/>
+    <h1 class="text-4xl">
+     Beer Menu
+    </h1>
+    <img src="https://placehold.co/50x50" alt="Right Logo" class="ml-4"/>
+   </div>
+   <div class="beer-item">
+    <img alt="Beer 1" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-ZZ5UQ9PXKxYxbSussUIdmCP5.png?st=2024-10-01T19%3A23%3A48Z&amp;se=2024-10-01T21%3A23%3A48Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T11%3A54%3A24Z&amp;ske=2024-10-02T11%3A54%3A24Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=LF7GG2UNtur4sVxrRTgIvRFcGAFeEFxAWVUNiO1c0eg%3D" width="50"/>
+    <div class="details">
+     <h2>
+      PILSEN
+     </h2>
+     <p>
+      Baldoria Cervejaria
+     </p>
+     <p>
+      4.7% | 10 IBU
+     </p>
     </div>
-    <div class="price w-full flex justify-between mt-2">
-     <div>
+    <div class="price">
+     <p>
       12,00
-     </div>
-     <div>
+     </p>
+     <p>
       15,00
-     </div>
-     <div>
+     </p>
+     <p>
       32,00
-     </div>
+     </p>
     </div>
    </div>
-   <div class="beer-item flex flex-col items-start">
-    <div class="flex items-center w-full">
-     <img alt="Beer 2" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-wIhlm2tgvgwLFTxOPJDq7E69.png?st=2024-10-01T14%3A28%3A33Z&amp;se=2024-10-01T16%3A28%3A33Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T01%3A38%3A05Z&amp;ske=2024-10-02T01%3A38%3A05Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=i6sJyeg2%2B1FJH1aGONn/xFekpSyjGXgm8g1/IJEwKrE%3D" width="50"/>
-     <div class="details ml-4">
-      <div class="text-lg">
-       MARIA NAVALHA
-      </div>
-      <div class="text-xs">
-       IMPERIAL SOUR COM PITAYA, MIRTI-LO, AMORA, MARSHMALLOW E DOCE DE LEITE
-      </div>
-      <div class="text-xs">
-       6,5% | 0 IBU
-      </div>
-     </div>
+   <div class="beer-item">
+    <img alt="Beer 2" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-8ynVzqMCdtcqyebhzXIi1F2U.png?st=2024-10-01T19%3A23%3A48Z&amp;se=2024-10-01T21%3A23%3A48Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T11%3A45%3A52Z&amp;ske=2024-10-02T11%3A45%3A52Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=3cXZ2uPCLvTYSTON7MWvhsXdHtJ%2B0VXg3jSzTwo1I8E%3D" width="50"/>
+    <div class="details">
+     <h2>
+      MARIA NAVALHA
+     </h2>
+     <p>
+      Imperial Sour com Pitaya, Mirtilo, Amora, Marshmallow e Doce de Leite
+     </p>
+     <p>
+      Ignorus Cervejaria
+     </p>
+     <p>
+      6.5% | 0 IBU
+     </p>
     </div>
-    <div class="price w-full flex justify-between mt-2">
-     <div>
+    <div class="price">
+     <p>
       22,00
-     </div>
-     <div>
+     </p>
+     <p>
       25,00
-     </div>
-     <div>
+     </p>
+     <p>
       52,00
-     </div>
+     </p>
     </div>
    </div>
-   <div class="beer-item flex flex-col items-start">
-    <div class="flex items-center w-full">
-     <img alt="Beer 3" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-D61eP7Rog8UsOX0wgOEwdQgP.png?st=2024-10-01T14%3A28%3A27Z&amp;se=2024-10-01T16%3A28%3A27Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T13%3A21%3A35Z&amp;ske=2024-10-02T13%3A21%3A35Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=ndpkkBPDv%2Becid4WQh/aiWoNfnig2UuZeA9TYZuDoKk%3D" width="50"/>
-     <div class="details ml-4">
-      <div class="text-lg">
-       MUTUM CAVALO
-      </div>
-      <div class="text-xs">
-       AMERICAN IPA
-      </div>
-      <div class="text-xs">
-       7% | 70 IBU
-      </div>
-     </div>
+   <div class="beer-item">
+    <img alt="Beer 3" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-iwtO8bWn4ipVksY31HJABcnX.png?st=2024-10-01T19%3A23%3A53Z&amp;se=2024-10-01T21%3A23%3A53Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T10%3A20%3A42Z&amp;ske=2024-10-02T10%3A20%3A42Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=w4umpRMZYrHMInPXtMtQjZsOZoKCDcebaje4Etrhlaw%3D" width="50"/>
+    <div class="details">
+     <h2>
+      MUTUM CAVALO
+     </h2>
+     <p>
+      American IPA
+     </p>
+     <p>
+      Ignorus Cervejaria
+     </p>
+     <p>
+      7% | 70 IBU
+     </p>
     </div>
-    <div class="price w-full flex justify-between mt-2">
-     <div>
+    <div class="price">
+     <p>
       22,00
-     </div>
-     <div>
+     </p>
+     <p>
       25,00
-     </div>
-     <div>
+     </p>
+     <p>
       52,00
-     </div>
+     </p>
     </div>
    </div>
-   <div class="beer-item flex flex-col items-start">
-    <div class="flex items-center w-full">
-     <img alt="Beer 4" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-MmsHqW8sZZct4zCFptbvqOai.png?st=2024-10-01T14%3A28%3A24Z&amp;se=2024-10-01T16%3A28%3A24Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T02%3A34%3A03Z&amp;ske=2024-10-02T02%3A34%3A03Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=bZROntUGGF90eorcUm/W1NnP5WEv9kfJKcvMac/C9g0%3D" width="50"/>
-     <div class="details ml-4">
-      <div class="text-lg">
-       SAN DIEGO
-      </div>
-      <div class="text-xs">
-       AMERICAN PALE ALE
-      </div>
-      <div class="text-xs">
-       5,4% | 36 IBU
-      </div>
-     </div>
+   <div class="beer-item">
+    <img alt="Beer 4" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-NZ4k6g4CY6oQbW6YE48WIvSq.png?st=2024-10-01T19%3A23%3A53Z&amp;se=2024-10-01T21%3A23%3A53Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T00%3A57%3A00Z&amp;ske=2024-10-02T00%3A57%3A00Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=9iDHS6EpKYiGhNCw3RrN5NCWeZOeJJdoULQiRV2oIFE%3D" width="50"/>
+    <div class="details">
+     <h2>
+      SAN DIEGO
+     </h2>
+     <p>
+      American Pale Ale
+     </p>
+     <p>
+      Barco Brewers
+     </p>
+     <p>
+      5.4% | 36 IBU
+     </p>
     </div>
-    <div class="price w-full flex justify-between mt-2">
-     <div>
+    <div class="price">
+     <p>
       22,00
-     </div>
-     <div>
+     </p>
+     <p>
       25,00
-     </div>
-     <div>
+     </p>
+     <p>
       52,00
-     </div>
+     </p>
     </div>
    </div>
-   <div class="beer-item flex flex-col items-start">
-    <div class="flex items-center w-full">
-     <img alt="Beer 5" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-Yoaf7latdfhKNA7Ag9HFLMqT.png?st=2024-10-01T14%3A28%3A28Z&amp;se=2024-10-01T16%3A28%3A28Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T15%3A05%3A30Z&amp;ske=2024-10-02T15%3A05%3A30Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=wpvCQwcI173YDYuxn6oV919kZQEj1juv2CGr2zSj2lU%3D" width="50"/>
-     <div class="details ml-4">
-      <div class="text-lg">
-       BACK TO BLACK
-      </div>
-      <div class="text-xs">
-       IRISH DRY STOUT
-      </div>
-      <div class="text-xs">
-       4,5% | 26 IBU
-      </div>
-     </div>
+   <div class="beer-item">
+    <img alt="Beer 5" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-hzPfEa6gmZALar74lQuOW6Js.png?st=2024-10-01T19%3A23%3A48Z&amp;se=2024-10-01T21%3A23%3A48Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T00%3A30%3A30Z&amp;ske=2024-10-02T00%3A30%3A30Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=e3rbl0d7DKIAim2PmjCbnMkpPuvh7shQCXaayqDV134%3D" width="50"/>
+    <div class="details">
+     <h2>
+      BACK TO BLACK
+     </h2>
+     <p>
+      Irish Dry Stout
+     </p>
+     <p>
+      Baldoria Cervejaria
+     </p>
+     <p>
+      4.5% | 26 IBU
+     </p>
     </div>
-    <div class="price w-full flex justify-between mt-2">
-     <div>
+    <div class="price">
+     <p>
       22,00
-     </div>
-     <div>
+     </p>
+     <p>
       25,00
-     </div>
-     <div>
+     </p>
+     <p>
       52,00
-     </div>
+     </p>
     </div>
    </div>
-   <div class="beer-item flex flex-col items-start">
-    <div class="flex items-center w-full">
-     <img alt="Beer 6" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-0SLBjvBHqP2FJWLFpTTtPqsI.png?st=2024-10-01T14%3A28%3A28Z&amp;se=2024-10-01T16%3A28%3A28Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T01%3A18%3A13Z&amp;ske=2024-10-02T01%3A18%3A13Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=Tq9gbd6w7d1086D1XjOYcngSUSbTBHEB5arp63pLYeo%3D" width="50"/>
-     <div class="details ml-4">
-      <div class="text-lg">
-       WEIZENBOCK
-      </div>
-      <div class="text-xs">
-       6,8% | 22 IBU
-      </div>
-     </div>
+   <div class="beer-item">
+    <img alt="Beer 6" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-iOPmWHcPfbeaS7NEEeUxaBZN.png?st=2024-10-01T19%3A23%3A55Z&amp;se=2024-10-01T21%3A23%3A55Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T01%3A38%3A52Z&amp;ske=2024-10-02T01%3A38%3A52Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=euLUnVaoXtocp8uXHZu%2BCGKpAtyeSpI5ZajelLwLFsI%3D" width="50"/>
+    <div class="details">
+     <h2>
+      WEIZENBOCK
+     </h2>
+     <p>
+      Coruja Cervejaria
+     </p>
+     <p>
+      6.8% | 22 IBU
+     </p>
     </div>
-    <div class="price w-full flex justify-between mt-2">
-     <div>
+    <div class="price">
+     <p>
       22,00
-     </div>
-     <div>
+     </p>
+     <p>
       25,00
-     </div>
-     <div>
+     </p>
+     <p>
       52,00
-     </div>
+     </p>
     </div>
    </div>
-   <div class="beer-item flex flex-col items-start">
-    <div class="flex items-center w-full">
-     <img alt="Beer 7" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-9mLotgAc9UQQ6Pz37IOEvJ3u.png?st=2024-10-01T14%3A28%3A27Z&amp;se=2024-10-01T16%3A28%3A27Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T07%3A13%3A11Z&amp;ske=2024-10-02T07%3A13%3A11Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=3IvUc59bKowaB%2BjG1AuzREYS%2BgZ8Z1cwDw0LbhMkubE%3D" width="50"/>
-     <div class="details ml-4">
-      <div class="text-lg">
-       CHOPP DE VINHO
-      </div>
-      <div class="text-xs">
-       5,2% | 0 IBU
-      </div>
-     </div>
+   <div class="beer-item">
+    <img alt="Beer 7" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-aslGacJPgkRsJLU6zmgMaV75.png?st=2024-10-01T19%3A23%3A46Z&amp;se=2024-10-01T21%3A23%3A46Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T19%3A39%3A54Z&amp;ske=2024-10-02T19%3A39%3A54Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=9tQzxzZMy%2BAkB/tnnHsfkcNlvcde/p0jrNGmgKsVYvA%3D" width="50"/>
+    <div class="details">
+     <h2>
+      CHOPP DE VINHO
+     </h2>
+     <p>
+      Big Sir Pub
+     </p>
+     <p>
+      5.2% | 0 IBU
+     </p>
     </div>
-    <div class="price w-full flex justify-between mt-2">
-     <div>
+    <div class="price">
+     <p>
       15,00
-     </div>
-     <div>
+     </p>
+     <p>
       20,00
-     </div>
-     <div>
+     </p>
+     <p>
       42,00
-     </div>
+     </p>
     </div>
    </div>
-   <div class="beer-item flex flex-col items-start">
-    <div class="flex items-center w-full">
-     <img alt="Beer 8" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-JWO2ZIYkFso8r95ewM9YYWDP.png?st=2024-10-01T14%3A28%3A31Z&amp;se=2024-10-01T16%3A28%3A31Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T01%3A21%3A36Z&amp;ske=2024-10-02T01%3A21%3A36Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=Bx5Z%2BOYGwEmNJs%2BXKgkvBHSWe8DEEZyrOhrUf67mQLE%3D" width="50"/>
-     <div class="details ml-4">
-      <div class="text-lg">
-       ICE - ABACAXI COM COCO
-      </div>
-      <div class="text-xs">
-       7% | 0 IBU
-      </div>
-     </div>
+   <div class="beer-item">
+    <img alt="Beer 8" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-PMwHbtuqmDQTyzSDo27wiw44.png?st=2024-10-01T19%3A23%3A48Z&amp;se=2024-10-01T21%3A23%3A48Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T02%3A18%3A37Z&amp;ske=2024-10-02T02%3A18%3A37Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=7TP0t9roH2VzVY22QOWyemex2dE6eZt3o1RL1ikmaC8%3D" width="50"/>
+    <div class="details">
+     <h2>
+      ICE - ABACAXI COM COCO
+     </h2>
+     <p>
+      Big Sir Pub
+     </p>
+     <p>
+      7% | 0 IBU
+     </p>
     </div>
-    <div class="price w-full flex justify-between mt-2">
-     <div>
+    <div class="price">
+     <p>
       15,00
-     </div>
-     <div>
-      20,
+     </p>
+     <p>
+      20,00
+     </p>
+     <p>
+      42,00
+     </p>
+    </div>
+   </div>
+   <div class="beer-item">
+    <img alt="Beer 9" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-uIBiWauAPMfkWe04OrKrt27R.png?st=2024-10-01T19%3A23%3A52Z&amp;se=2024-10-
